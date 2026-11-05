@@ -1,7 +1,7 @@
 from moviepy import VideoFileClip, AudioFileClip, CompositeAudioClip
 
-video = VideoFileClip("video.mp4")
-voice = AudioFileClip("voice.mp3")
+video = VideoFileClip("video.mp4").with_volume_scaled(1.0)
+voice = AudioFileClip("voice.mp3").with_volume_scaled(0.2)
 
 try:  # the try statement tells python that the following code might encounter errors
     final_audio = CompositeAudioClip([
@@ -17,11 +17,10 @@ try:  # the try statement tells python that the following code might encounter e
         audio_codec="aac"  # audio encoder
     )
     # this is resource management
+
 finally:
     if final_video is not None:
         final_video.close()
 
     video.close()
     voice.close()
-
-print(video.rotation)
