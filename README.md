@@ -7,7 +7,6 @@ A Python-based video processing tool that combines audio tracks, transcribes spe
 - **Speech Recognition:** Uses OpenAI Whisper (`base` model) to transcribe speech directly from a video.
 - **Automatic Caption Generation:** Converts transcription segments into individual visual caption clips.
 - **Timestamp Synchronization:** Uses Whisper's segment timestamps to synchronize captions with the original speech.
-- **Caption Styling:** Renders white captions with black outlines for improved readability.
 - **Audio Mixing:** Combines the video's original audio with an additional voice-over track.
 - **Video Export:** Produces an MP4 video with embedded captions and mixed audio.
 
@@ -99,7 +98,7 @@ The processed video is saved as:
 ```text
 output.mp4
 ```
-## The Process
+## The Process + The Code Logic
 LOAD WHISPER
 TRANSCRIBE VIDEO
 EXTRACT SEGMENTS
@@ -146,6 +145,4 @@ The output contains synchronized, permanently embedded captions and the combined
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-IMPORT LIBRARIES
-
 
