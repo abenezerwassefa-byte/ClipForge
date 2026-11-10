@@ -98,33 +98,12 @@ The processed video is saved as:
 ```text
 output.mp4
 ```
-## The Process + The Code Logic
-LOAD WHISPER
-TRANSCRIBE VIDEO
-EXTRACT SEGMENTS
-
-LOAD VIDEO
-LOAD VOICE
-
-TRY:
-
-    GENERATE CAPTION CLIPS
-
-    COMBINE ORIGINAL AUDIO + VOICE
-
-    COMBINE VIDEO + CAPTIONS
-
-    ATTACH MIXED AUDIO
-
-    EXPORT VIDEO
-
-FINALLY:
-
-    CLOSE FINAL VIDEO
-    CLOSE ORIGINAL VIDEO
-    CLOSE VOICE
 
 The output contains synchronized, permanently embedded captions and the combined audio tracks.
+
+## Workflow
+
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/53f411c3-29e5-4ff1-a1a7-2f82fe88c74e" />
 
 ## Current Limitations
 
